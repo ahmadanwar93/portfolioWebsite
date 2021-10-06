@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Hi, I am a front end developer. This is my portfolio.">
+    <meta name="keywords" content="HTML5, CSS3, JavaScript, Front End Developer, portfolio">
+    <meta name="author" content="Ahmad Fikri">
+    <title>Portfolio</title>
+
+    <!-- check balik og tag semua ni, update balik bila siap -->
+    <meta name="twitter:card" value="Hi, I am Ahmad Fikri, a front end developer. This is my portfolio.">
+    
+    <!-- Open Graph data -->
+    <meta property="og:title" content="Fikri Portfolio Website" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="http://www.example.com/" />
+    <!-- <meta property="og:image" content="http://example.com/image.jpg" /> -->
+    <meta property="og:description" content="Hi, I am Ahmad Fikri, a front end developer. This is my portfolio." />
+
+    <link rel="shortcut icon" href="./images/favicon (2).ico" type="image/x-icon">
+    <link rel="icon" href="./images/favicon (2).ico" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+            integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./minimalisticStyle.css" />
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <div id="nav-bar">
+                <ul>
+                    
+                    <li><a href="#nav-bar">Home</a></li>
+                    <li><a href="#about-me">About</a></li>
+                    <li><a href="#projectSection">Project</a></li>
+                    <li><a href="#contact-me">Contact</a></li>
+                </ul>
+            </div>
+            <div id="nav-bar-minimised">
+                <ul>
+                    <li>
+                        <a><i class="fas fa-home"></i></a>
+                    </li>
+                    <li>
+                        <a><i class="fas fa-briefcase"></i></a>
+                    </li>
+                    <li>
+                        <a><i class="fas fa-phone"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <div id="landing-page">
+            <div class="introduction-text-holder">
+                <h1 id="hiText">Hi</h1>
+                <h1 id="userName"></h1>
+                <h1 id="textSecondLayer">I am Ahmad Fikri bin Anwar Fadzil</h1>
+                <h1  id="textThirdLayer">I am a <span id="developerText">developer</span></h1>
+            </div>
+        </div>
+
+        <div id="about-me">
+            <h1>About me</h1>
+            <hr id="aboutMeLine">
+            <p class="firstLineText">
+                I am Ahmad Fikri. I am a junior software developer. I love gardening during my free time.
+            </p>
+            <p class="secondLineText">Click <a id="hereResume" href="./Ahmad_Fikri_Anwar_Fadzil_Resume.pdf" target="_blank">here</a> for my resume.</p>
+            <div id="timeline">
+                <div id="timelineRightFirst">
+                    <h2>2017-2019 <i class="fas fa-university timelineIcon"></i></h2>
+                    
+                    <p>Studied mechanical engineering degree from Curtin University Malaysia</p>
+
+                </div>
+                <div id="timelineLeft">
+                    <h2>2020 <i class="fas fa-graduation-cap timelineIcon"></i></h2>
+                    <p>
+                        Graduated mechanical engineering degree from Curtin University
+                    </p>
+                </div>
+                <div id="timelineRight">
+                    <h2>2021 <i class="fas fa-briefcase timelineIcon"></i></h2>
+                    <p>Started bootcamp at Invoke Solutions.</p>
+                    <p>Languages covered:</p>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Javascript</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="projectSection">
+            <h1>My works</h1>
+            <div class="project-container firstContainer" id="projectOne">
+                <div class="project-image">
+                    <img src="./images/piano2.png" />
+
+                </div>
+                <div class="project-description-container">
+                    <h2 class="project-title">Piano Keyboard</h2>
+                    <p class="project-description">
+                        This piano consists of 10 keys and it can be played using keyboard. The user can also click the
+                        record button before playing the piano. Then, by clicking the play button, the piano will
+                        playback the keys pressed. This project utilises HTML, CSS and Javascript.
+                    </p>
+                    <p>Click <a href="https://ahmadanwar93.github.io/SET-Day-11/" target="_blank">here </a>for demonstration</p>
+                </div>
+            </div>
+            <div class="project-container" id="projectTwo">
+                <div class="project-image">
+                    <img src="./images/clockProject.PNG" />
+                </div>
+                <div class="project-description-container">
+                    <h2 class="project-title">Clock Project</h2>
+                    <p class="project-description">
+                        There are 3 clocks: numerical, English and Malay ticking at the same time. The user can also
+                        click at the navigation bar on top to change the time zone, hence the time displayed. This
+                        project utilises HTML, CSS and Javascript.
+                    </p>
+                    <p>Click <a href="https://ahmadanwar93.github.io/clockProject/" target="_blank">here </a>for demonstration</p>
+                </div>
+            </div>
+            <div class="project-container" id="projectThree">
+                <div class="project-image">
+                    <img src="./images/background-color-2.PNG" />
+                </div>
+                <div class="project-description-container">
+                    <h2 class="project-title">Background Change</h2>
+                    <p class="project-description">
+                        For RGB color model, there are 16,777,216 available colors. Here, we want to show you the effect
+                        of increasing 100 values per second. This project utilises HTML, CSS and Javascript.
+                    </p>
+                    <p>Click <a href="https://ahmadanwar93.github.io/backgroundColor/" target="_blank">here </a>for demonstration</p>
+                </div>
+            </div>
+            <div class="project-container" id="projectFour">
+                <div class="project-image fourthImage">
+                    <img src="images/final_phone.png">
+                </div>
+                <div class="project-description-container">
+                    <h2 class="project-title">Music Player</h2>
+                    <p class="project-description">
+                        This music player contains 7 songs. The user can navigate the music player by clicking next or
+                        previous track button. Lastly, the user can also play/ pause and also repeat the song if
+                        desired.This project utilises HTML, CSS and Javascript.
+                    </p>
+                    <p>Click <a href="https://ahmadanwar93.github.io/SET-Day-9/" target="_blank">here </a>for demonstration</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="contact-me">
+            <h1>Contact Me</h1>
+            <div id="contactMeContainer">
+                <p>Hi <span id="userNameEmail"></span>, I would like to hear more from you.</p>
+                <!-- <ul>
+                    <li class="email-text">
+                        ahmadfikri.anwarfadzil@gmail.com
+                    </li>
+                    <li><a href="https://github.com/ahmadanwar93"><i class="fab fa-github"></i></a></li>
+                </ul> -->
+                <!-- <p>or</p>                 -->
+                <!-- <form> -->
+                    <input placeholder="Your email/ phone number" id="emailInput">
+                    <input placeholder="Your message here." id="messageInput">
+                    <input type="submit" id="submitButton">
+                    <div class="urgentMessageContainer">
+                        <input type="checkbox" id="checkBoxImportant">
+                        <p>Urgent message</p>
+                    </div>
+                    
+                    
+                <!-- </form> -->
+
+
+
+            </div>
+        </div>
+    </div>
+        <div id="bottomBar">
+            <div id="bottombarClass">
+            <a href="https://github.com/ahmadanwar93"><i class="fab fa-github"></i></a>
+            <a href="mailto:ahmadfikri.anwarfadzil@gmail.com"><i class="far fa-envelope"></i></a>
+            </div>
+        </div>
+    
+
+    <script src="https://www.gstatic.com/firebasejs/7.15.3/firebase-app.js"></script>
+    <!-- atas for firebase app -->
+    <script src="https://www.gstatic.com/firebasejs/7.15.3/firebase-database.js"></script>
+    <!-- atas for firebase real app -->
+    <!-- aku try baru script -->
+    <script src="./minimalisticScript.js"></script>
+
+
+    <!-- <script src="./newJSTryScript.js"></script> -->
+</body>
+
+</html>
