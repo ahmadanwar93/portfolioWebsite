@@ -21,7 +21,9 @@ function sayHello(){
 
 // prompt
 var myName = prompt("What is your name")
-
+if (myName == ""){
+    myName = "user";
+}
 
 
 var userName = document.getElementById("userName");
